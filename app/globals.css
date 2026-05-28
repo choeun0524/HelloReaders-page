@@ -302,3 +302,51 @@
 .faq-answer {
   animation: faq-open 0.28s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
+
+/* Hero CTA sparkle animation */
+.cta-glow-wrap {
+  position: relative;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+.cta-glow-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: calc(0.5rem + 4px);
+  border: 2px solid rgba(212, 175, 55, 0.7);
+  animation: cta-ring 2.4s ease-out infinite;
+  pointer-events: none;
+}
+@keyframes cta-ring {
+  0%   { opacity: 0.85; transform: scale(1); }
+  70%  { opacity: 0;    transform: scale(1.1); }
+  100% { opacity: 0;    transform: scale(1.1); }
+}
+
+.cta-primary-btn {
+  position: relative;
+  overflow: hidden;
+}
+.cta-primary-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 10%,
+    rgba(255, 255, 255, 0.38) 50%,
+    transparent 90%
+  );
+  transform: translateX(-200%);
+  animation: cta-sweep 3.2s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes cta-sweep {
+  0%   { transform: translateX(-200%); }
+  28%  { transform: translateX(400%); }
+  100% { transform: translateX(400%); }
+}

@@ -371,7 +371,11 @@ export default function Page() {
         phone: "전화 문의",
         email: "이메일",
         location: "오시는 길",
-        hours: "운영시간: 평일 13:00 – 20:00"
+        hours: "운영시간: 평일 13:00 – 20:00",
+        consultLabel: '상담 신청',
+        consultTitle: '궁금하신 점이 있으신가요?',
+        consultDesc: '아래 버튼을 통해 상담을 신청해 주세요.\n빠른 시일 내에 연락드리겠습니다.',
+        consultBtn: '상담 신청하기',
       },
       footer: {
         copyright: "© 2026 Hello Readers. All rights reserved."
@@ -491,7 +495,11 @@ export default function Page() {
         phone: "Phone",
         email: "Email",
         location: "Location",
-        hours: "Hours: Weekdays 13:00 – 20:00"
+        hours: "Hours: Weekdays 13:00 – 20:00",
+        consultLabel: 'Consultation',
+        consultTitle: 'Have questions for us?',
+        consultDesc: 'Submit your inquiry through the form below.\nWe will get back to you as soon as possible.',
+        consultBtn: 'Request a Consultation',
       },
       footer: {
         copyright: "© 2026 Hello Readers. All rights reserved."
@@ -773,27 +781,29 @@ export default function Page() {
           )}
 
           <div className="flex flex-wrap gap-4 justify-center">
-            <a
-              href="#contact"
-              className="px-10 py-4 rounded-lg transition-all text-lg font-semibold"
-              style={{
-                backgroundColor: colors.primary,
-                color: '#ffffff',
-                boxShadow: '0 4px 15px rgba(212, 175, 55, 0.4)',
-                border: `2px solid ${colors.primary}`,
-                textShadow: '0 2px 10px rgba(212,175,55,0.45)'
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.backgroundColor = '#ffffff';
-                e.currentTarget.style.color = colors.primary;
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.backgroundColor = colors.primary;
-                e.currentTarget.style.color = '#ffffff';
-              }}
-            >
-              {content[language].hero.cta1}
-            </a>
+            <span className="cta-glow-wrap">
+              <a
+                href="#contact"
+                className="px-10 py-4 rounded-lg transition-all text-lg font-semibold cta-primary-btn"
+                style={{
+                  backgroundColor: colors.primary,
+                  color: '#ffffff',
+                  boxShadow: '0 4px 15px rgba(212, 175, 55, 0.4)',
+                  border: `2px solid ${colors.primary}`,
+                  display: 'inline-block',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.backgroundColor = '#ffffff';
+                  e.currentTarget.style.color = colors.primary;
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.backgroundColor = colors.primary;
+                  e.currentTarget.style.color = '#ffffff';
+                }}
+              >
+                {content[language].hero.cta1}
+              </a>
+            </span>
             <a
               href="#programs"
               className="px-10 py-4 rounded-lg transition-all text-lg font-semibold"
@@ -1160,6 +1170,50 @@ export default function Page() {
             <p className="text-sm" style={{ color: colors.textGray }}>
               {content[language].contact.hours}
             </p>
+          </div>
+
+          {/* Consultation CTA Banner */}
+          <div className="mt-14 max-w-2xl mx-auto reveal reveal-d2">
+            <div
+              className="rounded-2xl p-10 text-center"
+              style={{
+                background: 'linear-gradient(135deg, #fffdf5 0%, #fff8e6 100%)',
+                border: `1px solid ${colors.primary}35`,
+                boxShadow: '0 8px 32px rgba(212,175,55,0.13)',
+              }}
+            >
+              <p className="text-xs tracking-widest uppercase mb-3" style={{ color: colors.primary, letterSpacing: '3px' }}>
+                {content[language].contact.consultLabel}
+              </p>
+              <h3 className="text-xl font-bold mb-3" style={{ color: colors.text }}>
+                {content[language].contact.consultTitle}
+              </h3>
+              <p className="text-sm mb-8 whitespace-pre-line" style={{ color: colors.textGray, lineHeight: '1.85' }}>
+                {content[language].contact.consultDesc}
+              </p>
+              <a
+                href="#"
+                className="inline-block px-10 py-4 rounded-lg font-semibold text-lg transition-all"
+                style={{
+                  backgroundColor: colors.primary,
+                  color: '#ffffff',
+                  boxShadow: '0 4px 20px rgba(212,175,55,0.45)',
+                  border: `2px solid ${colors.primary}`,
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.backgroundColor = '#ffffff';
+                  e.currentTarget.style.color = colors.primary;
+                  e.currentTarget.style.boxShadow = '0 6px 24px rgba(212,175,55,0.25)';
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.backgroundColor = colors.primary;
+                  e.currentTarget.style.color = '#ffffff';
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(212,175,55,0.45)';
+                }}
+              >
+                {content[language].contact.consultBtn}
+              </a>
+            </div>
           </div>
 
           {language === 'ko' && (
