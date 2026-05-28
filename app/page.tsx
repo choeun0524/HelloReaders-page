@@ -744,7 +744,8 @@ export default function Page() {
               color: colors.textGray,
               letterSpacing: '2px'
             }}>
-              {content[language].hero.subtitle}
+              <span className="hidden sm:inline">{content[language].hero.subtitle}</span>
+              <span className="sm:hidden">Read deeply · Think logically ·<br />Grow intelligently</span>
             </p>
           </div>
 
