@@ -865,7 +865,7 @@ export default function Page() {
                 <h3 className="text-xl font-bold mb-3" style={{ color: colors.text }}>
                   {feature.title}
                 </h3>
-                <p className="whitespace-pre-line" style={{ color: colors.textGray, lineHeight: '1.8' }}>
+                <p className="whitespace-normal sm:whitespace-pre-line" style={{ color: colors.textGray, lineHeight: '1.8' }}>
                   {renderBold(feature.description)}
                 </p>
               </div>
@@ -887,12 +887,12 @@ export default function Page() {
           </div>
 
           {/* Tabs */}
-          <div className="flex justify-center gap-4 mb-12 reveal reveal-d1">
+          <div className="flex flex-wrap justify-center gap-3 mb-12 reveal reveal-d1">
             {(['reading', 'debating', 'maths'] as const).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setSelectedCurriculum(tab)}
-                className="px-8 py-3 rounded-lg transition-all font-semibold"
+                className="px-5 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-all font-semibold text-sm sm:text-base"
                 style={{
                   backgroundColor: selectedCurriculum === tab ? colors.primary : 'transparent',
                   color: selectedCurriculum === tab ? '#ffffff' : colors.textGray,
@@ -949,7 +949,7 @@ export default function Page() {
                   <h3 className="text-lg font-bold mb-3" style={{ color: colors.text }}>
                     {card.title}
                   </h3>
-                  <p className="whitespace-pre-line" style={{ color: colors.textGray, lineHeight: '1.85' }}>
+                  <p className="whitespace-normal sm:whitespace-pre-line" style={{ color: colors.textGray, lineHeight: '1.85' }}>
                     {card.description}
                   </p>
                 </div>
@@ -1016,7 +1016,7 @@ export default function Page() {
                             <h4 className="font-bold text-sm mb-2" style={{ color: colors.primary }}>
                               {renderBold(item.title)}
                             </h4>
-                            <p className="whitespace-pre-line text-sm"
+                            <p className="whitespace-normal sm:whitespace-pre-line text-sm"
                               style={{ color: colors.textGray, lineHeight: '1.85' }}>
                               {renderBold(item.description)}
                             </p>
@@ -1142,7 +1142,7 @@ export default function Page() {
           </div>
 
           {/* Consultation CTA Banner */}
-          <div className="mb-10 max-w-2xl mx-auto reveal reveal-d1">
+          <div className="mb-10 max-w-2xl mx-auto">
             <div
               className="rounded-xl flex flex-col sm:flex-row items-center justify-between gap-5 px-7 py-6"
               style={{
@@ -1165,7 +1165,7 @@ export default function Page() {
               </div>
               <a
                 href="#"
-                className="flex-shrink-0 px-7 py-3 rounded-lg font-semibold transition-all text-sm whitespace-nowrap"
+                className="w-full sm:w-auto px-7 py-3 rounded-lg font-semibold transition-all text-sm text-center"
                 style={{
                   backgroundColor: colors.primary,
                   color: '#ffffff',
