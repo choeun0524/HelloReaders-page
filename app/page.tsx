@@ -374,7 +374,7 @@ export default function Page() {
         hours: "운영시간: 평일 13:00 – 20:00",
         consultLabel: '상담 신청',
         consultTitle: '궁금하신 점이 있으신가요?',
-        consultDesc: '아래 버튼을 통해 상담을 신청해 주세요.\n빠른 시일 내에 연락드리겠습니다.',
+        consultDesc: '아래 버튼을 통해 간편하게 상담을 신청해 주세요.',
         consultBtn: '상담 신청하기',
       },
       footer: {
@@ -498,7 +498,7 @@ export default function Page() {
         hours: "Hours: Weekdays 13:00 – 20:00",
         consultLabel: 'Consultation',
         consultTitle: 'Have questions for us?',
-        consultDesc: 'Submit your inquiry through the form below.\nWe will get back to you as soon as possible.',
+        consultDesc: 'Submit your inquiry through the form below.',
         consultBtn: 'Request a Consultation',
       },
       footer: {
@@ -781,29 +781,26 @@ export default function Page() {
           )}
 
           <div className="flex flex-wrap gap-4 justify-center">
-            <span className="cta-glow-wrap">
-              <a
-                href="#contact"
-                className="px-10 py-4 rounded-lg transition-all text-lg font-semibold cta-primary-btn"
-                style={{
-                  backgroundColor: colors.primary,
-                  color: '#ffffff',
-                  boxShadow: '0 4px 15px rgba(212, 175, 55, 0.4)',
-                  border: `2px solid ${colors.primary}`,
-                  display: 'inline-block',
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.backgroundColor = '#ffffff';
-                  e.currentTarget.style.color = colors.primary;
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.backgroundColor = colors.primary;
-                  e.currentTarget.style.color = '#ffffff';
-                }}
-              >
-                {content[language].hero.cta1}
-              </a>
-            </span>
+            <a
+              href="#contact"
+              className="px-10 py-4 rounded-lg transition-all text-lg font-semibold cta-primary-btn"
+              style={{
+                backgroundColor: colors.primary,
+                color: '#ffffff',
+                boxShadow: '0 4px 15px rgba(212, 175, 55, 0.4)',
+                border: `2px solid ${colors.primary}`,
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.backgroundColor = '#ffffff';
+                e.currentTarget.style.color = colors.primary;
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.backgroundColor = colors.primary;
+                e.currentTarget.style.color = '#ffffff';
+              }}
+            >
+              {content[language].hero.cta1}
+            </a>
             <a
               href="#programs"
               className="px-10 py-4 rounded-lg transition-all text-lg font-semibold"
@@ -1173,42 +1170,45 @@ export default function Page() {
           </div>
 
           {/* Consultation CTA Banner */}
-          <div className="mt-14 max-w-2xl mx-auto reveal reveal-d2">
+          <div className="mt-10 max-w-2xl mx-auto reveal reveal-d2">
             <div
-              className="rounded-2xl p-10 text-center"
+              className="rounded-xl flex flex-col sm:flex-row items-center justify-between gap-5 px-7 py-6"
               style={{
-                background: 'linear-gradient(135deg, #fffdf5 0%, #fff8e6 100%)',
-                border: `1px solid ${colors.primary}35`,
-                boxShadow: '0 8px 32px rgba(212,175,55,0.13)',
+                backgroundColor: '#ffffff',
+                border: '1px solid #e8e8e8',
+                borderLeft: `4px solid ${colors.primary}`,
+                boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
               }}
             >
-              <p className="text-xs tracking-widest uppercase mb-3" style={{ color: colors.primary, letterSpacing: '3px' }}>
-                {content[language].contact.consultLabel}
-              </p>
-              <h3 className="text-xl font-bold mb-3" style={{ color: colors.text }}>
-                {content[language].contact.consultTitle}
-              </h3>
-              <p className="text-sm mb-8 whitespace-pre-line" style={{ color: colors.textGray, lineHeight: '1.85' }}>
-                {content[language].contact.consultDesc}
-              </p>
+              <div className="text-center sm:text-left">
+                <p className="text-xs font-semibold tracking-widest uppercase mb-1" style={{ color: colors.primary, letterSpacing: '0.12em' }}>
+                  {content[language].contact.consultLabel}
+                </p>
+                <p className="font-bold text-base" style={{ color: colors.text }}>
+                  {content[language].contact.consultTitle}
+                </p>
+                <p className="text-sm mt-1" style={{ color: colors.textGray }}>
+                  {content[language].contact.consultDesc}
+                </p>
+              </div>
               <a
                 href="#"
-                className="inline-block px-10 py-4 rounded-lg font-semibold text-lg transition-all"
+                className="flex-shrink-0 px-7 py-3 rounded-lg font-semibold transition-all text-sm whitespace-nowrap"
                 style={{
                   backgroundColor: colors.primary,
                   color: '#ffffff',
-                  boxShadow: '0 4px 20px rgba(212,175,55,0.45)',
+                  boxShadow: '0 4px 14px rgba(212,175,55,0.35)',
                   border: `2px solid ${colors.primary}`,
                 }}
                 onMouseEnter={e => {
                   e.currentTarget.style.backgroundColor = '#ffffff';
                   e.currentTarget.style.color = colors.primary;
-                  e.currentTarget.style.boxShadow = '0 6px 24px rgba(212,175,55,0.25)';
+                  e.currentTarget.style.boxShadow = 'none';
                 }}
                 onMouseLeave={e => {
                   e.currentTarget.style.backgroundColor = colors.primary;
                   e.currentTarget.style.color = '#ffffff';
-                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(212,175,55,0.45)';
+                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(212,175,55,0.35)';
                 }}
               >
                 {content[language].contact.consultBtn}
