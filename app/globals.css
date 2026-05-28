@@ -307,6 +307,11 @@
   animation: faq-open 0.28s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
+/* Brand serif font */
+.brand-text {
+  font-family: var(--font-cormorant), 'Georgia', serif;
+}
+
 /* Hero CTA shimmer animation */
 .cta-primary-btn {
   position: relative;

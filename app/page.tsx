@@ -562,7 +562,7 @@ export default function Page() {
       >
         {/* Drawer Header */}
         <div className="flex justify-between items-center mb-8">
-          <span className="text-lg font-bold tracking-wider" style={{ color: colors.primary }}>Hello Readers</span>
+          <span className="text-lg font-bold tracking-wider brand-text" style={{ color: colors.primary }}>Hello Readers</span>
           <button
             onClick={() => setDrawerOpen(false)}
             className="p-2 rounded-lg transition-colors"
@@ -627,7 +627,7 @@ export default function Page() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-6">
               <div className="flex items-center">
-                <span className="text-2xl font-bold tracking-wider" style={{ color: colors.primary }}>Hello Readers</span>
+                <span className="text-2xl font-bold tracking-wider brand-text" style={{ color: colors.primary }}>Hello Readers</span>
               </div>
 
               {/* Language Switcher */}
@@ -719,7 +719,7 @@ export default function Page() {
 
       {/* Hero Section */}
       <section id="home" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-[85vh] flex items-center" style={{
-        backgroundColor: '#ffffff'
+        background: 'radial-gradient(ellipse 75% 55% at 50% 18%, #FDF8EC 0%, #ffffff 62%)'
       }}>
         <div className="max-w-4xl mx-auto text-center w-full">
           <div className="mb-6">
@@ -728,7 +728,7 @@ export default function Page() {
             </span>
           </div>
 
-          <h1 className="text-[3.375rem] sm:text-[4.125rem] lg:text-[5rem] font-bold mb-8" style={{
+          <h1 className="text-[3.375rem] sm:text-[4.125rem] lg:text-[5rem] font-bold mb-8 brand-text" style={{
             background: 'linear-gradient(160deg, #C9A227 0%, #D4AF37 30%, #F0CF6A 55%, #D4AF37 75%, #B8941F 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
@@ -836,7 +836,7 @@ export default function Page() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FAFAF7' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 reveal">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: colors.text }}>
@@ -845,6 +845,7 @@ export default function Page() {
             <p className="text-lg max-w-2xl mx-auto" style={{ color: colors.textGray }}>
               {content[language].about.subtitle}
             </p>
+            <div style={{ width: '48px', height: '1px', background: `linear-gradient(to right, transparent, ${colors.primary}, transparent)`, margin: '1.5rem auto 0' }} />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -854,8 +855,8 @@ export default function Page() {
                 className={`about-card p-8 rounded-xl reveal-d${index + 1}`}
                 style={{
                   backgroundColor: '#ffffff',
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
-                  border: '1px solid #e0e0e0'
+                  boxShadow: '0 8px 28px rgba(0,0,0,0.07)',
+                  border: '1px solid rgba(212,175,55,0.15)'
                 }}
                 onMouseEnter={e => {
                   e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.15)';
@@ -894,6 +895,7 @@ export default function Page() {
             <p className="text-lg" style={{ color: colors.textGray }}>
               {content[language].curriculum.subtitle}
             </p>
+            <div style={{ width: '48px', height: '1px', background: `linear-gradient(to right, transparent, ${colors.primary}, transparent)`, margin: '1.5rem auto 0' }} />
           </div>
 
           {/* Tabs */}
@@ -970,7 +972,7 @@ export default function Page() {
       </section>
 
       {/* Why Hello Readers Section */}
-      <section id="why" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
+      <section id="why" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FAFAF7' }}>
         <div className="max-w-5xl mx-auto">
 
           {/* Title */}
@@ -1052,6 +1054,7 @@ export default function Page() {
             <p className="text-lg" style={{ color: colors.textGray }}>
               {content[language].faq.subtitle}
             </p>
+            <div style={{ width: '48px', height: '1px', background: `linear-gradient(to right, transparent, ${colors.primary}, transparent)`, margin: '1.5rem auto 0' }} />
           </div>
 
           {/* FAQ Tabs */}
@@ -1149,6 +1152,7 @@ export default function Page() {
             <p className="text-lg" style={{ color: colors.textGray }}>
               {content[language].contact.subtitle}
             </p>
+            <div style={{ width: '48px', height: '1px', background: `linear-gradient(to right, transparent, ${colors.primary}, transparent)`, margin: '1.5rem auto 0' }} />
           </div>
 
           {/* Consultation CTA Banner */}
@@ -1283,12 +1287,16 @@ export default function Page() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8" style={{
+      <footer className="py-10 px-4 sm:px-6 lg:px-8" style={{
         backgroundColor: '#ffffff',
-        borderTop: '1px solid #e0e0e0'
+        borderTop: '1px solid rgba(212,175,55,0.2)'
       }}>
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-sm" style={{ color: colors.textGray }}>
+          <span className="brand-text text-xl font-medium" style={{ color: colors.primary, letterSpacing: '0.1em' }}>
+            Hello Readers
+          </span>
+          <div style={{ width: '32px', height: '1px', background: `linear-gradient(to right, transparent, ${colors.primary}, transparent)`, margin: '0.6rem auto 0.8rem' }} />
+          <p className="text-xs" style={{ color: '#aaaaaa', letterSpacing: '0.05em' }}>
             {content[language].footer.copyright}
           </p>
         </div>
