@@ -178,7 +178,7 @@ export default async function BlogPage({
             <ArrowLeft className="w-4 h-4" />
             {ui.back}
           </Link>
-          <span className="text-xl font-bold tracking-wider brand-text" style={{ color: '#D4AF37' }}>
+          <span className="text-xl font-bold tracking-wider" style={{ color: '#D4AF37' }}>
             {ui.label}
           </span>
           <span className="text-sm font-semibold" style={{ color: '#1a1a1a' }}>Blog</span>
