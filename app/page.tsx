@@ -1141,36 +1141,8 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {[
-              { icon: <Phone className="w-8 h-8 mx-auto mb-4" style={{ color: colors.primary }} />, label: content[language].contact.phone, value: '021-235-1778' },
-              { icon: <Mail className="w-8 h-8 mx-auto mb-4" style={{ color: colors.primary }} />, label: content[language].contact.email, value: 'helloreaders.nz@gmail.com' },
-              {
-                icon: <MapPin className="w-8 h-8 mx-auto mb-4" style={{ color: colors.primary }} />,
-                label: content[language].contact.location,
-                value: '31E Apollo Drive, Rosedale\nAuckland, New Zealand'
-              },
-            ].map((item, index) => (
-              <div key={index} className={`text-center p-6 rounded-lg reveal-fade reveal-d${index + 1}`} style={{
-                backgroundColor: '#ffffff',
-                boxShadow: '0 8px 25px rgba(0,0,0,0.1)',
-                border: '1px solid #e0e0e0'
-              }}>
-                {item.icon}
-                <h3 className="font-semibold mb-2" style={{ color: colors.text }}>{item.label}</h3>
-                <p className="whitespace-pre-line" style={{ color: colors.textGray }}>{item.value}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <p className="text-sm" style={{ color: colors.textGray }}>
-              {content[language].contact.hours}
-            </p>
-          </div>
-
           {/* Consultation CTA Banner */}
-          <div className="mt-10 max-w-2xl mx-auto reveal reveal-d2">
+          <div className="mb-10 max-w-2xl mx-auto reveal reveal-d1">
             <div
               className="rounded-xl flex flex-col sm:flex-row items-center justify-between gap-5 px-7 py-6"
               style={{
@@ -1214,6 +1186,34 @@ export default function Page() {
                 {content[language].contact.consultBtn}
               </a>
             </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {[
+              { icon: <Phone className="w-8 h-8 mx-auto mb-4" style={{ color: colors.primary }} />, label: content[language].contact.phone, value: '021-235-1778' },
+              { icon: <Mail className="w-8 h-8 mx-auto mb-4" style={{ color: colors.primary }} />, label: content[language].contact.email, value: 'helloreaders.nz@gmail.com' },
+              {
+                icon: <MapPin className="w-8 h-8 mx-auto mb-4" style={{ color: colors.primary }} />,
+                label: content[language].contact.location,
+                value: '31E Apollo Drive, Rosedale\nAuckland, New Zealand'
+              },
+            ].map((item, index) => (
+              <div key={index} className={`text-center p-6 rounded-lg reveal-fade reveal-d${index + 1}`} style={{
+                backgroundColor: '#ffffff',
+                boxShadow: '0 8px 25px rgba(0,0,0,0.1)',
+                border: '1px solid #e0e0e0'
+              }}>
+                {item.icon}
+                <h3 className="font-semibold mb-2" style={{ color: colors.text }}>{item.label}</h3>
+                <p className="whitespace-pre-line" style={{ color: colors.textGray }}>{item.value}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-sm" style={{ color: colors.textGray }}>
+              {content[language].contact.hours}
+            </p>
           </div>
 
           {language === 'ko' && (

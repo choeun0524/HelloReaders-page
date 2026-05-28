@@ -322,11 +322,11 @@
     transparent 90%
   );
   transform: translateX(-200%);
-  animation: cta-sweep 5.5s ease-in-out infinite;
+  animation: cta-sweep 3.7s ease-in-out infinite;
   pointer-events: none;
 }
 @keyframes cta-sweep {
   0%   { transform: translateX(-200%); }
-  32%  { transform: translateX(400%); }
+  48%  { transform: translateX(400%); }
   100% { transform: translateX(400%); }
 }
