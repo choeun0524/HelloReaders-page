@@ -719,7 +719,7 @@ export default function Page() {
 
       {/* Hero Section */}
       <section id="home" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-[85vh] flex items-center" style={{
-        background: 'radial-gradient(ellipse 75% 55% at 50% 18%, #FDF8EC 0%, #ffffff 62%)'
+        backgroundColor: '#ffffff'
       }}>
         <div className="max-w-4xl mx-auto text-center w-full">
           <div className="mb-6">
@@ -836,7 +836,7 @@ export default function Page() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FAFAF7' }}>
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 reveal">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: colors.text }}>
@@ -855,8 +855,8 @@ export default function Page() {
                 className={`about-card p-8 rounded-xl reveal-d${index + 1}`}
                 style={{
                   backgroundColor: '#ffffff',
-                  boxShadow: '0 8px 28px rgba(0,0,0,0.07)',
-                  border: '1px solid rgba(212,175,55,0.15)'
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+                  border: '1px solid #e0e0e0'
                 }}
                 onMouseEnter={e => {
                   e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.15)';
@@ -972,7 +972,7 @@ export default function Page() {
       </section>
 
       {/* Why Hello Readers Section */}
-      <section id="why" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FAFAF7' }}>
+      <section id="why" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-5xl mx-auto">
 
           {/* Title */}
