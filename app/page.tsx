@@ -702,6 +702,16 @@ export default function Page() {
                   {content[language].nav[key]}
                 </a>
               ))}
+              <Link
+                href={`/blog?lang=${language}`}
+                className="block py-2 transition-colors"
+                style={{ color: colors.text }}
+                onMouseEnter={e => (e.currentTarget.style.color = colors.primary)}
+                onMouseLeave={e => (e.currentTarget.style.color = colors.text)}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
             </div>
           )}
         </nav>
