@@ -361,10 +361,10 @@
   text-underline-offset: 2px;
 }
 
-/* Hero title letter spacing */
-.hero-title { letter-spacing: 4px; }
+/* Hero title letter spacing & line height */
+.hero-title { letter-spacing: 4px; line-height: 1.15; }
 @media (min-width: 640px) {
-  .hero-title { letter-spacing: 8px; }
+  .hero-title { letter-spacing: 8px; line-height: 1.5; }
 }
 
 /* Hero CTA shimmer animation */
