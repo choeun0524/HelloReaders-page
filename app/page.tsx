@@ -117,15 +117,11 @@ export default function Page() {
         items: [
           {
             title: "Spiral Learning System",
-            description: "상반기에는 토픽별 진도가 아닌,\n**스파이럴 방식으로 개념을 반복하며 학습합니다.**\n\n학교마다 다른 커리큘럼과 진도를\n유연하게 커버할 수 있어 언제든지 참여 가능합니다."
-          },
-          {
-            title: "Additional Skill Practice",
-            description: "교재 수업 외에도 필요한 **연산과 기초 훈련이 추가로 진행됩니다.**\n학생별 이해도와 필요한 부분에 맞춰 기본기를 함께 보완합니다."
+            description: "**스파이럴 방식으로 개념을 반복하며 학습합니다.**"
           },
           {
             title: "Free Maths Clinic Class",
-            description: "**4–5주마다 진행되는 무료 클리닉 수업을 통해\n복습, 오답확인, 심화문제 풀이가 추가됩니다.**"
+            description: "주기적으로 진행되는 무료 클리닉 수업을 통해 복습, 오답확인, 심화문제 풀이가 추가됩니다."
           },
           {
             title: "Progress Check",
