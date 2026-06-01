@@ -965,7 +965,7 @@ export default function Page() {
                   <h3 className="text-lg font-bold mb-3" style={{ color: colors.text }}>
                     {card.title}
                   </h3>
-                  <p className="whitespace-normal sm:whitespace-pre-line" style={{ color: colors.textGray, lineHeight: '1.85' }}>
+                  <p className="whitespace-pre-line" style={{ color: colors.textGray, lineHeight: '1.85' }}>
                     {card.description}
                   </p>
                 </div>
