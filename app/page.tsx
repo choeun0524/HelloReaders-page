@@ -739,7 +739,7 @@ export default function Page() {
           </h1>
 
           <div className="mb-6">
-            <p className="text-sm tracking-wide uppercase mb-2" style={{
+            <p className="text-xs sm:text-sm tracking-wide uppercase mb-2" style={{
               color: colors.textGray,
               letterSpacing: '2px'
             }}>
@@ -749,11 +749,11 @@ export default function Page() {
           </div>
 
           {language === 'ko' ? (
-            <div className="mb-12 max-w-lg mx-auto text-center" style={{ lineHeight: '3.4' }}>
-              <p className="text-2xl sm:text-3xl font-semibold" style={{ color: '#2a2a2a', letterSpacing: '-0.01em' }}>
+            <div className="mb-12 max-w-lg mx-auto text-center hero-text-block">
+              <p className="text-xl sm:text-3xl font-semibold" style={{ color: '#2a2a2a', letterSpacing: '-0.01em' }}>
                 리딩은 <span style={{ color: colors.primary, textShadow: '0 2px 10px rgba(212,175,55,0.45)' }}>이해력</span>을,
               </p>
-              <p className="text-2xl sm:text-3xl font-semibold" style={{ color: '#2a2a2a', letterSpacing: '-0.01em' }}>
+              <p className="text-xl sm:text-3xl font-semibold" style={{ color: '#2a2a2a', letterSpacing: '-0.01em' }}>
                 수학은 <span style={{ color: colors.primary, textShadow: '0 2px 10px rgba(212,175,55,0.45)' }}>논리력</span>을 키웁니다.
               </p>
               <div style={{
@@ -762,19 +762,19 @@ export default function Page() {
                 width: '60px',
                 background: `linear-gradient(to right, transparent, ${colors.primary}, transparent)`
               }} />
-              <p className="text-xl sm:text-2xl" style={{ color: '#555555', fontWeight: 400 }}>
+              <p className="text-lg sm:text-2xl" style={{ color: '#555555', fontWeight: 400 }}>
                 이 두 힘을 연결해
               </p>
-              <p className="text-xl sm:text-2xl font-semibold" style={{ color: '#2a2a2a' }}>
+              <p className="text-lg sm:text-2xl font-semibold" style={{ color: '#2a2a2a' }}>
                 <span style={{ color: colors.primary, textShadow: '0 2px 10px rgba(212,175,55,0.45)' }}>생각하는 아이</span>로 성장시킵니다.
               </p>
             </div>
           ) : (
-            <div className="mb-12 max-w-lg mx-auto text-center" style={{ lineHeight: '3.4' }}>
-              <p className="text-2xl sm:text-3xl font-semibold" style={{ color: '#2a2a2a', letterSpacing: '-0.01em' }}>
+            <div className="mb-12 max-w-lg mx-auto text-center hero-text-block">
+              <p className="text-xl sm:text-3xl font-semibold" style={{ color: '#2a2a2a', letterSpacing: '-0.01em' }}>
                 Reading builds <span style={{ color: colors.primary, textShadow: '0 2px 10px rgba(212,175,55,0.45)' }}>understanding.</span>
               </p>
-              <p className="text-2xl sm:text-3xl font-semibold" style={{ color: '#2a2a2a', letterSpacing: '-0.01em' }}>
+              <p className="text-xl sm:text-3xl font-semibold" style={{ color: '#2a2a2a', letterSpacing: '-0.01em' }}>
                 Maths builds <span style={{ color: colors.primary, textShadow: '0 2px 10px rgba(212,175,55,0.45)' }}>reasoning.</span>
               </p>
               <div style={{
@@ -783,7 +783,7 @@ export default function Page() {
                 width: '60px',
                 background: `linear-gradient(to right, transparent, ${colors.primary}, transparent)`
               }} />
-              <p className="text-2xl sm:text-3xl font-bold" style={{ color: '#2a2a2a', letterSpacing: '-0.02em' }}>
+              <p className="text-xl sm:text-3xl font-bold" style={{ color: '#2a2a2a', letterSpacing: '-0.02em' }}>
                 Together, they build{' '}
                 <span style={{ color: colors.primary, textShadow: '0 2px 10px rgba(212,175,55,0.45)' }}>thinkers.</span>
               </p>

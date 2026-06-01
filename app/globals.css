@@ -367,6 +367,12 @@
   .hero-title { letter-spacing: 8px; line-height: 1.5; }
 }
 
+/* Hero body text block line height */
+.hero-text-block { line-height: 2.6; }
+@media (min-width: 640px) {
+  .hero-text-block { line-height: 3.4; }
+}
+
 /* Hero CTA shimmer animation */
 .cta-primary-btn {
   position: relative;
