@@ -70,20 +70,20 @@ export default function Page() {
         title: "Why Hello Readers **Reading Program**",
         items: [
           {
-            title: "Paper Books & **Audiobooks**",
-            description: "종이책은 집중력과 이해력을 높이고,\n오디오북은 자연스러운 영어의 흐름과 표현을 익히도록 돕습니다.\n\n**리딩 레벨은\n읽기와 듣기가 함께할 때 성장합니다.**"
+            title: "Paper Books & Audiobooks",
+            description: "종이책은 집중력과 이해력을 높이고,\n오디오북은 자연스러운 영어의 흐름과 표현을 익히도록 돕습니다.\n\n리딩 레벨은\n읽기와 듣기가 함께할 때 성장합니다."
           },
           {
             title: "Flexible Schedule",
-            description: "**월-금 중 원하는 요일 선택 가능하며\n방과후 오후 4:30분 이전까지 자유롭게 입장하여 시작 가능합니다.**"
+            description: "월-금 중 원하는 요일 선택 가능하며\n방과후 오후 4:30분 이전까지 자유롭게 입장하여 시작 가능합니다."
           },
           {
             title: "Personalised Learning",
-            description: "학년별 수업이 아닌,\n**학생 개개인의 리딩 레벨과 이해도에 맞춰 진행됩니다.**"
+            description: "학생 개개인의 리딩 레벨과 이해도에 맞춰 진행됩니다."
           },
           {
             title: "Deep Understanding",
-            description: "선생님들이 원내의 모든 책 내용을 충분히 이해하고 수업을 진행합니다.\n\n단순한 줄거리 확인이 아닌,\n**질문과 디스커션을 통해 깊이있는 이해를 이끌어냅니다.**"
+            description: "질문과 디스커션을 통해 깊이있는 이해를 이끌어냅니다."
           },
           {
             title: "Weekly Updates",
