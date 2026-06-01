@@ -728,12 +728,11 @@ export default function Page() {
             </span>
           </div>
 
-          <h1 className="text-[3.375rem] sm:text-[4.125rem] lg:text-[5rem] font-bold mb-8" style={{
+          <h1 className="text-[3.375rem] sm:text-[4.125rem] lg:text-[5rem] font-bold mb-8 hero-title" style={{
             background: 'linear-gradient(160deg, #C9A227 0%, #D4AF37 30%, #F0CF6A 55%, #D4AF37 75%, #B8941F 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
-            letterSpacing: '8px',
             filter: 'drop-shadow(0 4px 18px rgba(212,175,55,0.45)) drop-shadow(0 1px 4px rgba(180,140,20,0.3))',
           }}>
             Hello Readers

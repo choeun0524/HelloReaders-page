@@ -361,6 +361,12 @@
   text-underline-offset: 2px;
 }
 
+/* Hero title letter spacing */
+.hero-title { letter-spacing: 4px; }
+@media (min-width: 640px) {
+  .hero-title { letter-spacing: 8px; }
+}
+
 /* Hero CTA shimmer animation */
 .cta-primary-btn {
   position: relative;
