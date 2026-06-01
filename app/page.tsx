@@ -836,27 +836,27 @@ export default function Page() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
+      <section id="about" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 reveal">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: colors.text }}>
+          <div className="text-center mb-10 sm:mb-16 reveal">
+            <h2 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4" style={{ color: colors.text }}>
               {content[language].about.title}
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: colors.textGray }}>
+            <p className="text-base sm:text-lg max-w-2xl mx-auto" style={{ color: colors.textGray }}>
               {language === 'ko' ? (
                 <>
                   모든 학습의 중심은<br className="sm:hidden" /> 읽고 이해하고 생각하는 힘입니다.
                 </>
               ) : content[language].about.subtitle}
             </p>
-            <div style={{ width: '48px', height: '1px', background: `linear-gradient(to right, transparent, ${colors.primary}, transparent)`, margin: '1.5rem auto 0' }} />
+            <div style={{ width: '48px', height: '1px', background: `linear-gradient(to right, transparent, ${colors.primary}, transparent)`, margin: '1.25rem auto 0' }} />
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-5 sm:gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className={`about-card p-8 rounded-xl reveal-d${index + 1}`}
+                className={`about-card p-5 sm:p-8 rounded-xl reveal-d${index + 1}`}
                 style={{
                   backgroundColor: '#ffffff',
                   boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
@@ -871,16 +871,16 @@ export default function Page() {
                   e.currentTarget.style.borderColor = '#e0e0e0';
                 }}
               >
-                <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-6" style={{
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-4 sm:mb-6" style={{
                   backgroundColor: `${colors.primary}20`,
                   color: colors.primary
                 }}>
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3" style={{ color: colors.text }}>
+                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3" style={{ color: colors.text }}>
                   {feature.title}
                 </h3>
-                <p className="whitespace-pre-line" style={{ color: colors.textGray, lineHeight: '1.8' }}>
+                <p className="whitespace-pre-line text-sm sm:text-base" style={{ color: colors.textGray, lineHeight: '1.8' }}>
                   {renderBold(feature.description)}
                 </p>
               </div>
