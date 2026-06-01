@@ -220,10 +220,10 @@ export default function Page() {
         { title: "Structured Essay Writing", description: "Structured Writing으로 연결하며\n논리적인 글쓰기 능력을 기릅니다." },
       ],
       maths: [
-        { title: "Foundation Building", description: "상반기에는 학년별 개념과 커리큘럼을\n탄탄하게 완성합니다." },
-        { title: "Analysis & Reasoning", description: "문제를 읽고 분석하며\n논리적으로 사고하는 힘을 기릅니다." },
-        { title: "Problem Solving", description: "단순 계산이 아닌 reasoning과 problem solving에 집중합니다." },
-        { title: "Advanced Thinking Maths", description: "하반기에는 토픽별 사고력 수학과\n심화 문장제 문제를 진행합니다." },
+        { title: "Foundation Building", description: "학년별 개념과 커리큘럼을 탄탄하게 완성합니다." },
+        { title: "Analysis & Reasoning", description: "분석하며 논리적으로 사고하는 힘을 기릅니다." },
+        { title: "Problem Solving", description: "Reasoning과 Problem Solving에 집중합니다." },
+        { title: "Advanced Thinking Maths", description: "토픽별 사고력 수학과 심화 문장제 문제를 진행합니다." },
       ],
     },
     en: {
