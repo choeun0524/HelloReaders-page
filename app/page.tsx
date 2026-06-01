@@ -272,11 +272,11 @@ export default function Page() {
         features: [
           {
             title: "읽고 이해하는 힘",
-            description: "종이책과 오디오북을 기반으로\n깊이 있게 읽고\n**의미를 이해하는 힘을 키웁니다.**"
+            description: "종이책과 오디오북을 기반으로\n깊이 있게 읽고 의미를 이해하는 힘을 키웁니다."
           },
           {
             title: "논리적으로 사고하는 힘",
-            description: "**읽고 분석하고 생각하는 과정을 통해\n논리적 사고력과 문제 해결력을 함께 키웁니다.**"
+            description: "읽고 분석하고 생각하는 과정을 통해\n논리적 사고력과 문제 해결력을 함께 키웁니다."
           },
           {
             title: "생각을 표현하는 힘",
@@ -880,7 +880,7 @@ export default function Page() {
                 <h3 className="text-xl font-bold mb-3" style={{ color: colors.text }}>
                   {feature.title}
                 </h3>
-                <p className="whitespace-normal sm:whitespace-pre-line" style={{ color: colors.textGray, lineHeight: '1.8' }}>
+                <p className="whitespace-pre-line" style={{ color: colors.textGray, lineHeight: '1.8' }}>
                   {renderBold(feature.description)}
                 </p>
               </div>
