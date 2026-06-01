@@ -843,7 +843,11 @@ export default function Page() {
               {content[language].about.title}
             </h2>
             <p className="text-lg max-w-2xl mx-auto" style={{ color: colors.textGray }}>
-              {content[language].about.subtitle}
+              {language === 'ko' ? (
+                <>
+                  모든 학습의 중심은<br className="sm:hidden" /> 읽고 이해하고 생각하는 힘입니다.
+                </>
+              ) : content[language].about.subtitle}
             </p>
             <div style={{ width: '48px', height: '1px', background: `linear-gradient(to right, transparent, ${colors.primary}, transparent)`, margin: '1.5rem auto 0' }} />
           </div>
