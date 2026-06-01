@@ -92,23 +92,23 @@ export default function Page() {
         ]
       },
       debating: {
-        title: "Why Hello Readers **Debating & Essay Writing Program**",
+        title: "Why Hello Readers\n**Debating & Essay Writing Program**",
         items: [
           {
             title: "Weekly Topics",
-            description: "**매주 새로운 토픽으로 수업이 진행되며,\n1년 동안 반복 없이 약 40개의 다양한 주제를 다룹니다.**"
+            description: "매주 새로운 토픽으로 다양한 주제를 다룹니다."
           },
           {
             title: "Structured Writing Goals",
-            description: "**5개의 시즌(각 8주)마다 명확한 Writing 목표를 통해\n단계적으로 Writing Skills를 성장시킵니다.**"
+            description: "명확한 목표를 통해 단계적으로 Writing Skill를 성장시킵니다."
           },
           {
             title: "Weekly Feedback Updates",
-            description: "**매주 Essay Writing이 노션 페이지를 통해 학부모님과 공유됩니다.\n학생의 성장 과정을 꾸준히 확인할 수 있습니다.**"
+            description: "학생의 성장 과정을 꾸준히 확인할 수 있습니다."
           },
           {
             title: "Small Group Discussion",
-            description: "**최대 4명의 소규모 수업으로 진행되며,\n모든 학생이 충분히 자신의 생각을 표현할 수 있습니다.**"
+            description: "소규모 수업으로 진행되며, 모든 학생이 충분히 자신의 생각을 표현할 수 있습니다."
           },
         ]
       },
@@ -1017,7 +1017,7 @@ export default function Page() {
                 const panel = whyData[language][selectedWhy];
                 return (
                   <div>
-                    <h3 className="text-xl font-bold mb-10" style={{ color: colors.text }}>
+                    <h3 className="text-xl font-bold mb-10 whitespace-pre-line sm:whitespace-normal" style={{ color: colors.text }}>
                       {renderBold(panel.title)}
                     </h3>
                     {panel.items.length === 0 ? (
