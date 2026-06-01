@@ -214,7 +214,7 @@ export default function Page() {
         { title: "Growth", description: "다양한 문장 구조와 표현을 배우며\n이해력과 표현력을 함께 성장시킵니다." },
       ],
       debating: [
-        { title: "Read Current Issues", description: "매주 다양한 사회적 이슈와 저널을 읽고\n주제에 대한 이해를 넓힙니다." },
+        { title: "Read Current Issues", description: "다양한 사회적 이슈와 저널을 읽고\n주제에 대한 이해를 넓힙니다." },
         { title: "Discuss Different Perspectives", description: "다양한 관점으로 토론하고 사고를 확장합니다." },
         { title: "Build Logical Arguments", description: "논리적으로 정리하고 근거를 바탕으로 생각을 발전시킵니다." },
         { title: "Structured Essay Writing", description: "Structured Writing으로 연결하며\n논리적인 글쓰기 능력을 기릅니다." },
