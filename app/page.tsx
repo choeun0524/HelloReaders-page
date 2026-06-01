@@ -929,7 +929,7 @@ export default function Page() {
                 {content[language].curriculum.yearRanges[selectedCurriculum].main}
               </p>
               {content[language].curriculum.yearRanges[selectedCurriculum].levels.length > 0 && (
-                <div className="flex flex-wrap justify-center gap-x-6 gap-y-1">
+                <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-x-6 gap-y-1">
                   {content[language].curriculum.yearRanges[selectedCurriculum].levels.map((level, i) => (
                     <span key={i} className="text-xs" style={{ color: colors.textGray }}>
                       {level}
